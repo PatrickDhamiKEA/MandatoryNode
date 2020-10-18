@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend Basics</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="API.css">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../">Forsiden</a>
+        <a href="../backend">Backend</a>
+        <a href="../htmlPage">HTML</a>
+        <a href="../cssPage">CSS</a>
+        <a href="../jQueryPage">JQuery</a>
+    </div>
+
+    <div class="homeButton">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <h1>API</h1>
+
+    <img id="codeOmSide" src="../assets/infoOmSide.PNG" alt="CodeSnippet">
+    <p id="infoOmSide">Denne side omhandler hvordan man kan bruge HTTP metoder til at se, indsætte, redigere og slette i et API. Der er brugt en json() metode for at kunne bruge JSON filer, en urlencoded()
+        metode for at kunne bruge det vi tager fra url'en og der er brugt en static() metode for at kunne tilgå js, html og css filer fra en public mappe</p>
+
+
+    <div class="fields">
+        <div class="carField">
+            <label for="car">Bil: </label>
+            <input type="text" id="car" name="car"><br>
+        </div>
+
+        <div class="idField">
+            <label for="carById">ID: </label>
+            <input type="text" id="carById" name="carById"><br>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="showAllCars" onclick="window.location.href = '/cars'">Vis alle biler</button>
+        <img id="showAllCarsCode" src="../assets/showAllCars.PNG" alt="CodeSnippet">
+        <button type="button" id="carId">Find med ID</button>
+        <img id="findIdCode" src="../assets/findId.PNG" alt="CodeSnippet">
+        <button id="postCar" onclick="postAlert()">Tilføj bil</button>
+        <img id="insertCarCode" src="../assets/insertCar.PNG" alt="CodeSnippet">
+        <button id="deleteCar" onclick="deleteCar()">Slet bil</button>
+        <img id="deleteCarCode" src="../assets/deleteCar.PNG" alt="CodeSnippet">
+        <button id="changeCar" onclick="changeCar()">Rediger bil</button>
+        <img id="changeCarCode" src="../assets/changeCar.PNG" alt="CodeSnippet">
+    </div>
+
+
+    <p id="showAllCarsInfo">Knappen 'Vis alle biler' viser alle de biler der er i listen med JSON objekter</p>
+    <p id="insertCarInfo">I tekstfeltet Bil kan der indtastes navnet på en bil, som man herefter kan tilføjes til listen over JSON objekter ved at bruge knappen 'Tilføj bil'.
+        Bilen man tilføjer bliver automatisk tildelt et ID</p>
+    <p id="changeCarInfo">Hvis man også tilføjer et ID i ID tekstfeltet, og bruger knappen 'Rediger bil', kan man redigere bilen med det specificerede ID</p>
+    <p id="findIdInfo">Hvis man kun bruger ID tekstfeltet, og trykker på knappen 'Find med ID', får man vist bilen der ligger på det specificerede ID</p>
+    <p id="deleteCarInfo">Hvis man kun bruger ID tekstfeltet og trykker på knappen 'Slet bil', så sletter man bilen på det specificerede ID</p>
+
+    <p id="infoTilBruger">Hold musen henover en knap for at se yderligere informationer</p>
+
+
+    <p id="info"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="API.js"></script>
+    <script src="../global.js"></script>
+
+</body>
+</html>
+
+<!---<div class="image-container">
+                <div class="eyesImage">
+                    <img src="../assets/eyes.png">
+                    <div class="hoverEyes">
+                    </div>
+                </div>
+            </div> --->

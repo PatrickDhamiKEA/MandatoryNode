@@ -1,0 +1,31 @@
+p {
+    margin-left: 20%;
+    margin-right: 40%;
+}
+
+#packageJson {
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 70%;
+    right: 3%;
+}
+
+#directImg {
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 70%;
+    right: 3%;
+}
+
+#listenImg {
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 70%;
+    right: 3%;
+}

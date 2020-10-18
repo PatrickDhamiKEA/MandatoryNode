@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="htmlPage.css">
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../">Forsiden</a>
+        <a href="../API">API</a>
+        <a href="../backend">Backend</a>
+        <a href="../cssPage">CSS</a>
+        <a href="../jQueryPage">JQuery</a>
+    </div>
+
+    <div class="homeButton">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <h1>HTML</h1>
+
+    <h2>Et udsnit af HTML tags brugt på denne side:</h2>
+
+    <table>
+        <tr>
+            <th>Tags</th>
+            <th>Beskrivelse</th>
+        </tr>
+        <tr id="h1Row">
+            <td>h1</td>
+            <td>Et af mange header tags der bruges til overskrifter og underoverskrifter</td>
+        </tr>
+        <tr id="divRow">
+            <td>div</td>
+            <td>Bruges til at definere en sektion af et HTML dokument. Kan nemt styles med CSS, når man tildeler div tagget et id eller class</td>
+        </tr>
+        <tr id="aRow">
+            <td>a</td>
+            <td>Et Anchor tag bruges til at definere et hyperlink med href attributen</td>
+        </tr>
+        <tr id="imgRow">
+            <td>img</td>
+            <td>Et img tag bruges til at vise et billede med src attributen. Alt attributten bruges til at indsætte en tekst såfremt billedet ikke kan vises</td>
+        </tr>
+        <tr id="inputRow">
+            <td>input</td>
+            <td>Input tagget bruges til at give brugeren en mulighed for at angive data. Type attributten kan bruges til at angive hvilken slags input der skal vises</td>
+        </tr>
+        <tr id="labelRow">
+            <td>label</td>
+            <td>Label tagget kan bruges til at definere et label ved elementer. I dette tilfælde er label tagget brugt med et input felt</td>
+        </tr>
+        <tr id="buttonRow">
+            <td>button</td>
+            <td>Button tagget er ret selvforklarende da det bruges til at definere en knap på siden</td>
+        </tr>
+
+        <div class="images">
+            <img id="h1" src="../assets/h1.PNG" alt="Codesnippet">
+            <img id="div_label_input" src="../assets/div_label_input.PNG" alt="Codesnippet">
+            <img id="a" src="../assets/a.PNG" alt="Codesnippet">
+            <img id="img" src="../assets/img.PNG" alt="Codesnippet">
+            <img id="buttonImg" src="../assets/button.PNG" alt="Codesnippet">
+        </div>
+
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../global.js"></script>
+    <script src="htmlPage.js"></script>
+
+</body>
+</html>

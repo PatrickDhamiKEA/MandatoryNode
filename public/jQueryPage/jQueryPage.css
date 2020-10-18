@@ -1,0 +1,13 @@
+p {
+    margin-left: 25%;
+    padding: 10px;
+}
+
+#jQImg {
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    top: 60%;
+    left: 30%;
+    right: 50%;
+}

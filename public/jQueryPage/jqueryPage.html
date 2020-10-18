@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="jQueryPage.css">
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../">Forsiden</a>
+        <a href="../API">API</a>
+        <a href="../backend">Backend</a>
+        <a href="../htmlPage">HTML</a>
+        <a href="../cssPage">CSS</a>
+    </div>
+
+    <div class="homeButton">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <h1>JQuery</h1>
+
+    <p>jQuery er et JavaScript bibiotek der gør det mere simpelt at skrive JavaScript.</p>
+    <p>Med jQuery er det nemmere at gennemgå og manipulere HTML dokumenter, lave eventHandling, animationer og AJAX</p>
+    <p>Biblioteket tilgås ved enten at downloade det lokalt, eller via et CDN som Google API's</p>
+    <p>Her kan det bruges ved at lave et script tag med en src attribute</p>
+    <p>jQuery syntax startes et $ tegn der definerer at det er jQuery, herefter bruger man en selector og en action.</p>
+
+    <p id="jQ">Hold musen henover dette stykke tekst for at se et eksempel fra denne hjemmeside. Her er der udfra samme selector (postCar) lavet flere actions. <br>
+        Der er en click metode der indikerer hvad der skal ske når der klikkes på knappen med id="postCar". Her bliver der lavet et AJAX post kald <br>
+        til endpointet /cars som indeholder en liste over JSON objekter (se server.js). Derudover er der tilkoblet to yderligere actions (.mouseover og .mouseout) <br>
+        Disse metoder indikerer hvad der skal ske når musen er henover knappen og hvad der skal ske når musen ikke er henover knappen. I dette tilfælde bruges jQuery's <br>
+        hide og show metoder til at gemme og vise billederne der er valgt med selctoren
+    </p>
+
+    <img id="jQImg" src="../assets/jQuery_AJAX.PNG" alt="CodeSnippet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../global.js"></script>
+    <script src="jQueryPage.js"></script>
+
+</body>
+</html>

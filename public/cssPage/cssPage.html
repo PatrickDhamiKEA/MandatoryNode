@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="cssPage.css">
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../">Forsiden</a>
+        <a href="../API">API</a>
+        <a href="../backend">Backend</a>
+        <a href="../htmlPage">HTML</a>
+        <a href="../jQueryPage">JQuery</a>
+    </div>
+
+    <div class="homeButton">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <h1>CSS</h1>
+
+    <p>Cascading Style Sheets bruges til at style et HTML dokument.</p>
+    <p>CSS syntax består af en selector og en deklaration der indeholder en egenskab og en værdi</p>
+    <p id="cssLink">Der linkes til CSS filen på HTML siden med et link tag, og sti'en til CSS filen i href attributen</p>
+    <p id="hashtagSelector">Med # som selector prefix kan man tilgå elementer med en id attribut</p>
+    <p id="dotSelector">Med . som selector prefix kan man tilgå elementer med en class attribut</p>
+
+    <img id="hashtagSelectorImg" src="../assets/hashtagSelector.PNG" alt="CodeSnippet">
+    <img id="dotSelectorImg" src="../assets/dotSelector.PNG" alt="CodeSnippet">
+    <img id="cssLinkImg" src="../assets/cssLink.PNG" alt="CodeSnippet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../global.js"></script>
+    <script src="cssPage.js"></script>
+
+</body>
+</html>
